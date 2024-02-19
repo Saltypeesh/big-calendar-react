@@ -1,7 +1,7 @@
-import Calendar from "./components/Calendar";
+// import Calendar from "./components/Calendar";
 import { ChakraProvider } from "@chakra-ui/react";
-import CustomCalendar from "./components/CustomerCalendar/CustomCalendar";
-import CalendarSteps from "./components/CalendarSteps/CalendarSteps";
+// import CustomCalendar from "./components/CustomerCalendar/CustomCalendar";
+// import CalendarSteps from "./components/CalendarSteps/CalendarSteps";
 import DragAndDrop from "./components/DragAndDrop/DragAndDrop";
 
 function App() {

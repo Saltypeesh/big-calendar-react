@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import { Box, Flex, Text } from "@chakra-ui/react";
 import {
-  AppointmentStatusCode,
+  //  AppointmentStatusCode,
   EVENT_STATUS_COLORS,
-} from "../CustomCalendar.constants";
+} from "../../constants";
 
 export default function AppointmentEvent({ appointment }) {
   const { location, status, resource, address } = appointment;
@@ -21,6 +21,7 @@ export default function AppointmentEvent({ appointment }) {
       </Flex>
       <Box mt={4}>
         {address.split("\n").map((add) => (
+          // eslint-disable-next-line react/jsx-key
           <Text fontSize="xs">{add}</Text>
         ))}
       </Box>
