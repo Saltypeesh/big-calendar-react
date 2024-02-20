@@ -2,17 +2,18 @@
 import { ChakraProvider } from "@chakra-ui/react";
 // import CustomCalendar from "./components/CustomerCalendar/CustomCalendar";
 // import CalendarSteps from "./components/CalendarSteps/CalendarSteps";
-import DragAndDrop from "./components/DragAndDrop/DragAndDrop";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers";
+import CalendarView from "./components/CalendarView/CalendarView";
 
 function App() {
   return (
     <ChakraProvider>
-      <div style={{ height: "95vh" }}>
-        {/* <Calendar /> */}
-        {/* <CustomCalendar /> */}
-        {/* <CalendarSteps /> */}
-        <DragAndDrop />
-      </div>
+      <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <div style={{ height: "95vh" }}>
+          <CalendarView />
+        </div>
+      </LocalizationProvider>
     </ChakraProvider>
   );
 }
