@@ -55,6 +55,10 @@ export const Calendar = ({ onShowAppointmentView }) => {
       onSelectSlot={({ start, end }) => {
         onShowAppointmentView({ start, end });
       }}
+      onDoubleClickEvent={(event) => {
+        const appointment = event?.data?.appointment;
+        appointment && onShowAppointmentView(appointment);
+      }}
       events={appointments}
       style={{ width: "100%" }}
       components={components}

@@ -41,12 +41,12 @@ export default function AppointmentEvent({ appointment, onDoubleClick }) {
             p={1}
             height="100%"
             color="black"
-            onDoubleClick={() => onDoubleClick(appointment)}
-            onContextMenu={(e) => {
-              e.stopPropagation();
-              e.preventDefault();
-              setIsOpen(true);
-            }}
+            // onDoubleClick={() => onDoubleClick(appointment)}
+            // onContextMenu={(e) => {
+            //   e.stopPropagation();
+            //   e.preventDefault();
+            //   setIsOpen(true);
+            // }}
           >
             <Flex alignItems={"center"} justifyContent="space-between">
               <Flex>
